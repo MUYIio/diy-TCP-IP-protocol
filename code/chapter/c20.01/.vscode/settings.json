@@ -1,0 +1,20 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    "files.associations": {
+        "dbg.h": "c",
+        "stdint.h": "c",
+        "socket.h": "c",
+        "net.h": "c",
+        "tools.h": "c",
+        "ping.h": "c",
+        "sys.h": "c",
+        "NET_PLAT.H": "cpp",
+        "tcp.h": "c",
+        "pcapdevice.h": "c",
+        "netdev.h": "c",
+        "platform.h": "c",
+        "winsock2.h": "c",
+        "sock.h": "c",
+        "string.h": "c"
+    }
+}

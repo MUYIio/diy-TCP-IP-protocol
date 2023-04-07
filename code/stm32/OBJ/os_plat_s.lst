@@ -1,0 +1,92 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             SWITCH, CODE, READONLY
+    2 00000000         PendSV_Handler
+                               PROC
+    3 00000000                 EXPORT           PendSV_Handler
+    4 00000000                 IMPORT           os_switch_ctx
+    5 00000000         ; 保存其余寄存器
+    6 00000000 B672            CPSID            I           ; Prevent interrupt
+                                                            ion during context 
+                                                            switch
+    7 00000002 F3EF 8009       MRS              R0, PSP
+    8 00000006 B108            CBZ              R0, PendSV_Handler_Nosave ; Ski
+                                                            p register save the
+                                                             first time
+    9 00000008 E920 0FF0       STMDB            R0!, {R4-R11}
+   10 0000000C         
+   11 0000000C         PendSV_Handler_Nosave
+   12 0000000C         ; 调用函数：参数通过R0传递，返回值也通�
+                       ��R0传递 
+   13 0000000C F7FF FFFE       BL               os_switch_ctx
+   14 00000010         
+   15 00000010         ; 恢复下一任务寄存器
+   16 00000010 E8B0 0FF0       LDMIA            R0!, {R4-R11}
+   17 00000014 F380 8809       MSR              PSP, R0
+   18 00000018         
+   19 00000018         ; 切换到普通用户模式
+   20 00000018 F06F 0E02       MOV              LR, #0xFFFFFFFD
+   21 0000001C B662            CPSIE            I
+   22 0000001E 4770            BX               LR
+   23 00000020                 ENDP
+   24 00000020         
+   25 00000020         
+   26 00000020                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=..\obj\os_plat_s.d -o..\obj\os_plat_s.o -I.\RTE\Compiler -I.\RTE\_
+rtos -IC:\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.7.2\Include -IC:\Keil_v5\ARM\PAC
+K\Keil\STM32F4xx_DFP\2.17.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil
+_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.0\Device\Include --predefine="__UVISION_VE
+RSION SETA 538" --predefine="_RTE_ SETA 1" --predefine="STM32F407xx SETA 1" --p
+redefine="_RTE_ SETA 1" --list=..\obj\os_plat_s.lst ..\os\os_plat_s.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+PendSV_Handler 00000000
+
+Symbol: PendSV_Handler
+   Definitions
+      At line 2 in file ..\os\os_plat_s.s
+   Uses
+      At line 3 in file ..\os\os_plat_s.s
+Comment: PendSV_Handler used once
+PendSV_Handler_Nosave 0000000C
+
+Symbol: PendSV_Handler_Nosave
+   Definitions
+      At line 11 in file ..\os\os_plat_s.s
+   Uses
+      At line 8 in file ..\os\os_plat_s.s
+Comment: PendSV_Handler_Nosave used once
+SWITCH 00000000
+
+Symbol: SWITCH
+   Definitions
+      At line 1 in file ..\os\os_plat_s.s
+   Uses
+      None
+Comment: SWITCH unused
+3 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+External symbols
+
+os_switch_ctx 00000000
+
+Symbol: os_switch_ctx
+   Definitions
+      At line 4 in file ..\os\os_plat_s.s
+   Uses
+      At line 13 in file ..\os\os_plat_s.s
+Comment: os_switch_ctx used once
+1 symbol
+337 symbols in table

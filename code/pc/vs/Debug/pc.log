@@ -1,0 +1,74 @@
+﻿  tcp_echo_client.c
+  tcp_echo_server.c
+  ucp_echo_client.c
+  udp_echo_server.c
+  httpd.c
+  ntp.c
+  ping.c
+  download.c
+  main.c
+  tftp.c
+  tftp_client.c
+D:\tongban\course\diy-tcpip\code\pc\src\app\tftp\tftp_client.c(150,24): warning C4018: “<”: 有符号/无符号不匹配
+D:\tongban\course\diy-tcpip\code\pc\src\app\tftp\tftp_client.c(253,24): warning C4018: “<”: 有符号/无符号不匹配
+  tftp_server.c
+D:\tongban\course\diy-tcpip\code\pc\src\app\tftp\tftp_server.c(86,24): warning C4018: “<”: 有符号/无符号不匹配
+D:\tongban\course\diy-tcpip\code\pc\src\app\tftp\tftp_server.c(180,18): warning C4018: “<”: 有符号/无符号不匹配
+  arp.c
+  dbg.c
+  dns.c
+  ether.c
+  exmsg.c
+  fixq.c
+  icmpv4.c
+  ipaddr.c
+  正在生成代码...
+  正在编译...
+  ipv4.c
+D:\tongban\course\diy-tcpip\code\pc\src\net\src\ipv4.c(594,23): warning C4018: “>”: 有符号/无符号不匹配
+D:\tongban\course\diy-tcpip\code\pc\src\net\src\ipv4.c(698,67): warning C4018: “>”: 有符号/无符号不匹配
+  loop.c
+  mblock.c
+  net.c
+  netapi.c
+  netif.c
+  nlist.c
+  nlocker.c
+  pktbuf.c
+  raw.c
+  sock.c
+  socket.c
+  tcp.c
+  tcp_buf.c
+  tcp_in.c
+  tcp_out.c
+  tcp_state.c
+  timer.c
+  tools.c
+  udp.c
+  正在生成代码...
+  正在编译...
+  netif_pcap.c
+  net_plat.c
+  sys_plat.c
+  正在生成代码...
+netif_pcap.obj : error LNK2019: 无法解析的外部符号 _pcap_close，函数 _netif_pcap_close 中引用了该符号
+netif_pcap.obj : error LNK2019: 无法解析的外部符号 _pcap_next_ex，函数 _recv_thread 中引用了该符号
+netif_pcap.obj : error LNK2019: 无法解析的外部符号 _pcap_inject，函数 _xmit_thread 中引用了该符号
+netif_pcap.obj : error LNK2019: 无法解析的外部符号 _pcap_geterr，函数 _xmit_thread 中引用了该符号
+sys_plat.obj : error LNK2001: 无法解析的外部符号 _pcap_geterr
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_lookupnet，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_create，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_set_snaplen，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_set_promisc，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_set_timeout，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_set_immediate_mode，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_activate，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_setfilter，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_setnonblock，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_compile，函数 _pcap_device_open 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_findalldevs，函数 _pcap_find_device 中引用了该符号
+sys_plat.obj : error LNK2019: 无法解析的外部符号 _pcap_freealldevs，函数 _pcap_find_device 中引用了该符号
+D:\tongban\course\diy-tcpip\code\pc\vs\..\npcap\Lib\x64\wpcap.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+D:\tongban\course\diy-tcpip\code\pc\vs\..\npcap\Lib\x64\packet.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+D:\tongban\course\diy-tcpip\code\pc\vs\Debug\pc.exe : fatal error LNK1120: 16 个无法解析的外部命令

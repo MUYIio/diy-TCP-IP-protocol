@@ -1,0 +1,14 @@
+..\obj\os_queue.o: ..\os\os_queue.c
+..\obj\os_queue.o: ..\os\os_queue.h
+..\obj\os_queue.o: ..\os\os_cfg.h
+..\obj\os_queue.o: ..\os\os_event.h
+..\obj\os_queue.o: ..\os\os_list.h
+..\obj\os_queue.o: ..\os\os_plat.h
+..\obj\os_queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\obj\os_queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\os_queue.o: ..\os\os_err.h
+..\obj\os_queue.o: ..\os\os_dbg.h
+..\obj\os_queue.o: ..\os\os_task.h
+..\obj\os_queue.o: ..\os\os_core.h
+..\obj\os_queue.o: ..\os\os_mem.h
+..\obj\os_queue.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

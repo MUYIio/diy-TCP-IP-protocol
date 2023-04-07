@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\app">
+      <UniqueIdentifier>{cb55f674-8f9d-459f-b1a3-14d0da91e939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net">
+      <UniqueIdentifier>{14987bad-ae75-4dcb-baa7-0531d641126a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\plat">
+      <UniqueIdentifier>{b0a0aaec-e81a-40e5-95fe-a3e0aabe3100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net\net">
+      <UniqueIdentifier>{99f667b4-164c-47b5-8273-64f18c32ddb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net\src">
+      <UniqueIdentifier>{01a04f7e-cccf-4aa1-82b8-fd4510b4e1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app\echo">
+      <UniqueIdentifier>{fe5723f1-6560-43f7-90a9-7a5a44e62c26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app\ping">
+      <UniqueIdentifier>{5f363630-3715-48eb-a873-e3f1f443e09d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app\test">
+      <UniqueIdentifier>{76082dff-6cfa-4b9f-91c2-eb517ed579bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app\http">
+      <UniqueIdentifier>{40617aee-e4ae-4a5c-97d9-658e914ede95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app\ntp">
+      <UniqueIdentifier>{5957b371-0f3e-40fc-8669-a4e0db8d9c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\app\tftp">
+      <UniqueIdentifier>{e7c74c44-2f9e-4c76-918e-eef3b937bff2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\app\echo\tcp_echo_client.c">
+      <Filter>源文件\app\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\echo\tcp_echo_server.c">
+      <Filter>源文件\app\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\echo\ucp_echo_client.c">
+      <Filter>源文件\app\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\echo\udp_echo_server.c">
+      <Filter>源文件\app\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\ping\ping.c">
+      <Filter>源文件\app\ping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\http\httpd.c">
+      <Filter>源文件\app\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\tftp\tftp.c">
+      <Filter>源文件\app\tftp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\tftp\tftp_client.c">
+      <Filter>源文件\app\tftp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\tftp\tftp_server.c">
+      <Filter>源文件\app\tftp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\ntp\ntp.c">
+      <Filter>源文件\app\ntp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\test\download.c">
+      <Filter>源文件\app\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\app\test\main.c">
+      <Filter>源文件\app\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\arp.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\dbg.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\dns.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\ether.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\exmsg.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\fixq.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\icmpv4.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\ipaddr.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\ipv4.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\loop.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\mblock.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\net.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\netapi.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\netif.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\nlist.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\nlocker.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\pktbuf.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\raw.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\sock.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\socket.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\tcp.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\tcp_buf.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\tcp_in.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\tcp_out.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\tcp_state.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\timer.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\tools.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\src\udp.c">
+      <Filter>源文件\net\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plat\net_plat.c">
+      <Filter>源文件\plat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plat\netif_pcap.c">
+      <Filter>源文件\plat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\plat\sys_plat.c">
+      <Filter>源文件\plat</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\app\echo\tcp_echo_client.h">
+      <Filter>源文件\app\echo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\echo\tcp_echo_server.h">
+      <Filter>源文件\app\echo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\echo\udp_echo_client.h">
+      <Filter>源文件\app\echo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\echo\udp_echo_server.h">
+      <Filter>源文件\app\echo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\ping\ping.h">
+      <Filter>源文件\app\ping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\http\httpd.h">
+      <Filter>源文件\app\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\tftp\tftp.h">
+      <Filter>源文件\app\tftp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\tftp\tftp_client.h">
+      <Filter>源文件\app\tftp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\tftp\tftp_server.h">
+      <Filter>源文件\app\tftp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\app\ntp\ntp.h">
+      <Filter>源文件\app\ntp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\arp.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\dbg.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\dns.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\ether.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\exmsg.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\fixq.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\icmpv4.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\ipaddr.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\ipv4.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\loop.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\mblock.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\net.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\net_cfg.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\net_err.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\netapi.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\netif.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\nlist.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\nlocker.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\pktbuf.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\protocol.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\raw.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\sock.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\socket.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\sys.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\tcp.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\tcp_buf.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\tcp_in.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\tcp_out.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\tcp_state.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\timer.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\tools.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\net\udp.h">
+      <Filter>源文件\net\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plat\net_plat.h">
+      <Filter>源文件\plat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plat\netif_pcap.h">
+      <Filter>源文件\plat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\plat\sys_plat.h">
+      <Filter>源文件\plat</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

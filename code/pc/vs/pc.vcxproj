@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\app\echo\tcp_echo_client.c" />
+    <ClCompile Include="..\src\app\echo\tcp_echo_server.c" />
+    <ClCompile Include="..\src\app\echo\ucp_echo_client.c" />
+    <ClCompile Include="..\src\app\echo\udp_echo_server.c" />
+    <ClCompile Include="..\src\app\http\httpd.c" />
+    <ClCompile Include="..\src\app\ntp\ntp.c" />
+    <ClCompile Include="..\src\app\ping\ping.c" />
+    <ClCompile Include="..\src\app\test\download.c" />
+    <ClCompile Include="..\src\app\test\main.c" />
+    <ClCompile Include="..\src\app\tftp\tftp.c" />
+    <ClCompile Include="..\src\app\tftp\tftp_client.c" />
+    <ClCompile Include="..\src\app\tftp\tftp_server.c" />
+    <ClCompile Include="..\src\net\src\arp.c" />
+    <ClCompile Include="..\src\net\src\dbg.c" />
+    <ClCompile Include="..\src\net\src\dns.c" />
+    <ClCompile Include="..\src\net\src\ether.c" />
+    <ClCompile Include="..\src\net\src\exmsg.c" />
+    <ClCompile Include="..\src\net\src\fixq.c" />
+    <ClCompile Include="..\src\net\src\icmpv4.c" />
+    <ClCompile Include="..\src\net\src\ipaddr.c" />
+    <ClCompile Include="..\src\net\src\ipv4.c" />
+    <ClCompile Include="..\src\net\src\loop.c" />
+    <ClCompile Include="..\src\net\src\mblock.c" />
+    <ClCompile Include="..\src\net\src\net.c" />
+    <ClCompile Include="..\src\net\src\netapi.c" />
+    <ClCompile Include="..\src\net\src\netif.c" />
+    <ClCompile Include="..\src\net\src\nlist.c" />
+    <ClCompile Include="..\src\net\src\nlocker.c" />
+    <ClCompile Include="..\src\net\src\pktbuf.c" />
+    <ClCompile Include="..\src\net\src\raw.c" />
+    <ClCompile Include="..\src\net\src\sock.c" />
+    <ClCompile Include="..\src\net\src\socket.c" />
+    <ClCompile Include="..\src\net\src\tcp.c" />
+    <ClCompile Include="..\src\net\src\tcp_buf.c" />
+    <ClCompile Include="..\src\net\src\tcp_in.c" />
+    <ClCompile Include="..\src\net\src\tcp_out.c" />
+    <ClCompile Include="..\src\net\src\tcp_state.c" />
+    <ClCompile Include="..\src\net\src\timer.c" />
+    <ClCompile Include="..\src\net\src\tools.c" />
+    <ClCompile Include="..\src\net\src\udp.c" />
+    <ClCompile Include="..\src\plat\netif_pcap.c" />
+    <ClCompile Include="..\src\plat\net_plat.c" />
+    <ClCompile Include="..\src\plat\sys_plat.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\app\echo\tcp_echo_client.h" />
+    <ClInclude Include="..\src\app\echo\tcp_echo_server.h" />
+    <ClInclude Include="..\src\app\echo\udp_echo_client.h" />
+    <ClInclude Include="..\src\app\echo\udp_echo_server.h" />
+    <ClInclude Include="..\src\app\http\httpd.h" />
+    <ClInclude Include="..\src\app\ntp\ntp.h" />
+    <ClInclude Include="..\src\app\ping\ping.h" />
+    <ClInclude Include="..\src\app\tftp\tftp.h" />
+    <ClInclude Include="..\src\app\tftp\tftp_client.h" />
+    <ClInclude Include="..\src\app\tftp\tftp_server.h" />
+    <ClInclude Include="..\src\net\net\arp.h" />
+    <ClInclude Include="..\src\net\net\dbg.h" />
+    <ClInclude Include="..\src\net\net\dns.h" />
+    <ClInclude Include="..\src\net\net\ether.h" />
+    <ClInclude Include="..\src\net\net\exmsg.h" />
+    <ClInclude Include="..\src\net\net\fixq.h" />
+    <ClInclude Include="..\src\net\net\icmpv4.h" />
+    <ClInclude Include="..\src\net\net\ipaddr.h" />
+    <ClInclude Include="..\src\net\net\ipv4.h" />
+    <ClInclude Include="..\src\net\net\loop.h" />
+    <ClInclude Include="..\src\net\net\mblock.h" />
+    <ClInclude Include="..\src\net\net\net.h" />
+    <ClInclude Include="..\src\net\net\netapi.h" />
+    <ClInclude Include="..\src\net\net\netif.h" />
+    <ClInclude Include="..\src\net\net\net_cfg.h" />
+    <ClInclude Include="..\src\net\net\net_err.h" />
+    <ClInclude Include="..\src\net\net\nlist.h" />
+    <ClInclude Include="..\src\net\net\nlocker.h" />
+    <ClInclude Include="..\src\net\net\pktbuf.h" />
+    <ClInclude Include="..\src\net\net\protocol.h" />
+    <ClInclude Include="..\src\net\net\raw.h" />
+    <ClInclude Include="..\src\net\net\sock.h" />
+    <ClInclude Include="..\src\net\net\socket.h" />
+    <ClInclude Include="..\src\net\net\sys.h" />
+    <ClInclude Include="..\src\net\net\tcp.h" />
+    <ClInclude Include="..\src\net\net\tcp_buf.h" />
+    <ClInclude Include="..\src\net\net\tcp_in.h" />
+    <ClInclude Include="..\src\net\net\tcp_out.h" />
+    <ClInclude Include="..\src\net\net\tcp_state.h" />
+    <ClInclude Include="..\src\net\net\timer.h" />
+    <ClInclude Include="..\src\net\net\tools.h" />
+    <ClInclude Include="..\src\net\net\udp.h" />
+    <ClInclude Include="..\src\plat\netif_pcap.h" />
+    <ClInclude Include="..\src\plat\net_plat.h" />
+    <ClInclude Include="..\src\plat\sys_plat.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cbe72a9f-0c2c-40be-afc2-d72c45cab47e}</ProjectGuid>
+    <RootNamespace>pc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\src\app;$(ProjectDir)..\src\net\net;$(ProjectDir)..\src\plat;$(ProjectDir)..\npcap\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\src\app;$(ProjectDir)..\src\plat;$(ProjectDir)..\npcap\Include;$(ProjectDir)..\src\net\net;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SYS_PLAT_WINDOWS;NET_DRIVER_PCAP;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\npcap\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wpcap.lib;packet.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NET_DRIVER_PCAP;_CRT_SECURE_NO_WARNINGS;SYS_PLAT_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\npcap\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wpcap.lib;packet.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "os_queue.h": "c",
+        "os_list.h": "c",
+        "usart.h": "c",
+        "os_api.h": "c",
+        "os_mem.h": "c",
+        "os_mutex.h": "c",
+        "stm32f4xx.h": "c",
+        "*.rh": "c"
+    }
+}
